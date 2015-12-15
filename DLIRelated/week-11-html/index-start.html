@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title></title>
+
+        <!-- CSS Plugins -->
+    
+         <!-- My custom CSS -->
+      
+        
+    </head>
+
+    <body>
+        
+        <div id="container">
+
+        <div class="nav">
+            
+            <div class="logo"><a href="#section-1"><img src="images/logo.png"></a>
+            <p>Can't stop the scroll</p>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="#section-1">Home</a></li>
+                    <li>
+                        <a href="#section-2">About</a>
+                    <!-- SUBNAV STARTS HERE -->
+                     <!--   <ul class="subnav">
+                            <li><a href="#">Pugs</a></li>
+                            <li><a href="#">Author</a></li>
+                            <li><a href="#">Life</a></li>
+                        </ul> --> 
+                     <!-- SUBNAV ENDS HERE -->    
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#bottom">More</a></li>
+                </ul>
+            </div>
+        </div>
+            
+            
+<div id="section-1" class="image" data-stellar-background-ratio="0.3" ></div>
+    
+    <div class="content">
+        <div class="keeper">
+        <h2 id="head-1">HEADING</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><span id="bottom"></span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+        </div>
+        
+    </div>
+
+              <div class="clearer"></div>
+            
+
+        </div>
+    
+    <!-- javacript -->     
+        <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.stellar.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        
+        <script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 500);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+        
+
+    </body>
+</html>
