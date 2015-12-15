@@ -1,0 +1,165 @@
+html,
+body {
+    margin: 0;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+.clearer {
+    clear: both;
+    float: none;
+}
+
+#container {
+    width: 80%;
+    background-color: blue;
+    margin:auto;
+    padding-top:30px;
+}
+
+.nav {
+    background-color: #222222; 
+    color: #ffffff;
+    font-weight: 200;
+    height: 50px;
+    list-style: none;
+    letter-spacing: 2px;
+    left: 0; /* position to the top left of the window */
+    margin: 0;
+    padding: 10px 30px;
+    position: fixed; /* stick to the same position on the window, even when scrolled */
+    top: 0; 
+    width: 100%;
+    z-index: 10; /* always appear on top, unless there is another element with a z-index > 10 */
+
+}
+
+.nav .logo img{
+    margin: 00px 0 10px 0px;
+    padding: 0px 20px;
+    width:50px;
+}
+
+.nav .logo p {
+    margin-top:-65px;
+    margin-left:100px;
+    width:200px;
+}
+
+.nav .menu ul {
+    float: right;
+    list-style: none;
+    margin-top:-50px;
+    margin-right: 40px;
+    padding: 10px;
+    width: auto;
+}
+.nav .menu li {
+    float: left; /*makes the links fall into a line*/
+    position: relative; 
+}
+
+.nav .menu a {
+    border-right: 1px solid #ffffff;
+    color: #ffffff;
+    display: block;
+    line-height: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.nav .menu ul a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+
+/*dropdown menu*/
+.nav .menu li .subnav {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 200px;
+    z-index: 1;
+}
+.nav .menu li:hover .subnav {
+    display: block;
+}
+.nav .menu li .subnav li {
+    border-bottom: 1px solid #000;
+    float: none; /* overwrite pre-defined styles above */
+}
+.nav .menu li .subnav li:last-child {
+    border-bottom: 0 none;
+}
+.nav .menu li .subnav li a { /* overwrite pre-defined styles above */
+    border-right: 0 none;
+    color: #000;
+    padding:10px;
+    margin:0px;
+}
+.nav .menu li .subnav li a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/*start parallax section */
+
+
+
+.image {
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    }
+
+#section-1 {
+    background: url(../images/image1.jpeg) no-repeat;
+    background-attachment: fixed; 
+    height: 600px;
+}
+
+#section-2 {
+    background: url(../images/image2.jpg) no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+}
+#section-3 {
+    background: url(../images/image3.jpg) no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.content {
+    background: none;
+    position: relative;
+    z-index: 0;
+    padding: 60px 20px;
+    height: 600px
+}
+
+.content .keeper {
+    margin:0px 10px; 
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+h2 {
+    color: #3cb0f8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 30px 0px 50px 0;
+}
+
+p {
+    
+    font-family: sans-serif;
+}
+
+
+
