@@ -21,45 +21,38 @@ body {
 
 /*   Header and Navigation bar   */
 
-
-#contact h2 {
-    float: left;
-    
-}
-
-#contact{
-    
-}
-
-.header {
+#header {
     background-color: aliceblue;
     height: 240px;
     position: fixed;
     top: 0;
+    transition: line-height 0.2s linear, box-shadow 0.2s linear;
     width: 800px;
     z-index: 100;
 }
 
-.header #banner {
+#header #banner {
     height: 75%;
 }
 
-.header #banner #contact {
+#header #banner #contact {
     float:right;
     height: 80px;
     margin-top: 40px;
+    text-align: center;
 }
 
-.header #banner #contact h2 {
+#header #banner #contact h2 {
+    float: left;
     padding: 0 20px;
 }
 
-.header #banner #contact p {
+#header #banner #contact p {
     float: right;
     padding: 0 20px;
 }
 
-.header #banner #logo {
+#header #banner #logo {
     
     float: left;
     height: 80px;
@@ -68,30 +61,32 @@ body {
 }
 
 
-.header .small {
-    
+#header .small {
+    height: 50px;
 }
 
 #navbar {
-    margin:auto;
     border-style: solid none;
-    height:20%;
+    height:22%;
     width: 100%;
 }
 
 #navbar ul {
+    margin-top: 0px;
     list-style: none;
 }
 
 #navbar li {
     float: left;
-    margin-right: 10px;
+    margin-right: 0px;
+    width: 25%;
 }
 
 
 #navbar li a {
     background-color: #f9f9f9;
     display: block;
+    border: 1px solid;
 }
 
 #navbar li a:hover{
